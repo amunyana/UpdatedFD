@@ -64,8 +64,8 @@ body{
         3.1) About Media Query 
    4) Classes 
         4.1) Classes Media Query
-   5) Performances & Workshops
-        5.1) Performances Media Query
+   5) Contact
+        5.1) Contact Media Query
    6) Success     
    */
 
@@ -648,7 +648,7 @@ h3{
 
 }
 
-/* 5) Performances & Workshops */
+/* 5) Contact */
 
 .performances{
     display:grid;
@@ -765,7 +765,7 @@ padding: 1.5rem;
     grid-area: button;
 }
 
-/* 5.1) Performances Media Query */
+/* 5.1) Contact Media Query */
 
 @media screen and (min-width:850px) {
    
