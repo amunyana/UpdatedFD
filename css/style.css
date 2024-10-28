@@ -64,8 +64,8 @@ body{
         3.1) About Media Query 
    4) Classes 
         4.1) Classes Media Query
-   5) Contact
-        5.1) Contact Media Query
+   5) Performances & Workshops
+        5.1) Performances Media Query
    6) Success     
    */
 
@@ -418,7 +418,7 @@ nav a:hover {
     font-family: var(--text);
     font-size:1.2rem;
     line-height: 1.35rem;
-    text-indent:2rem;
+    text-indent:0;
     padding-inline: 3rem;
 }
 
@@ -450,7 +450,9 @@ nav a:hover {
     "cert-three"
     "cert-four"
     "cert-five"
-    "cert-six";
+    "cert-six"
+    "cert-seven"
+    "cert-eight";
     grid-template-columns: 1fr;
     place-items: center;
 }
@@ -499,6 +501,13 @@ nav a:hover {
     
 }
 
+.oth{
+    grid-area: cert-seven; 
+}
+
+.coth{
+    grid-area: cert-eight;
+}
 
 /* 3.1) About Media Query */
 
@@ -506,17 +515,16 @@ nav a:hover {
     .about-body{
         display: grid;
         grid-template-areas:
-        "image image about"
-        "writeup writeup";
-        grid-template-columns:repeat(3, 1fr);
+        "image image about writeup writeup writeup";
+        grid-template-columns: repeat(6, 1fr);
         padding-top:10rem;
     }
     
     .certificates{
         display: grid;
         grid-template-areas:
-        "cert-one cert-three cert-five"
-        "cert-two cert-four cert-six";
+        "cert-one cert-three cert-five cert-seven"
+        "cert-two cert-four cert-six cert-eight";
         grid-auto-columns:1fr;
         padding-inline: 2%;
     }
@@ -527,8 +535,8 @@ nav a:hover {
     }
 
     .about-head{
-        font-size: 1.6rem;
-        place-self: end start;
+        font-size: 2.8rem;
+        place-self: start;
     }
 
     
@@ -541,7 +549,7 @@ nav a:hover {
     grid-template-areas:
     "bellydance"
     "latin"
-    "workout";
+    "swing";
     grid-template-columns:1fr;
     row-gap: 2rem;
     padding-top:10rem;
@@ -556,8 +564,8 @@ nav a:hover {
     grid-area: latin;
 }
 
-.workoutdance{
-    grid-area: workout;
+.swingdance{
+    grid-area: swing;
 }
 
 h3{
@@ -663,14 +671,14 @@ h3{
         position:relative;
         display:grid;
         grid-template-areas:
-        "bellydance latin workout";
+        "bellydance latin swing";
         grid-template-columns:repeat(3, 1fr);
         column-gap: 6rem;
         padding-top:10rem;
         place-items: center;
         left:20rem;
     }
-    
+
     .calendar{
         position:relative;
         display:grid;
@@ -695,9 +703,10 @@ h3{
         width:80%;
         height:1000px;
     }
+
 }
 
-/* 5) Contact */
+/* 5) Performances & Workshops */
 
 .performances{
     display:grid;
@@ -814,7 +823,7 @@ padding: 1.5rem;
     grid-area: button;
 }
 
-/* 5.1) Contact Media Query */
+/* 5.1) Performances Media Query */
 
 @media screen and (min-width:850px) {
    
